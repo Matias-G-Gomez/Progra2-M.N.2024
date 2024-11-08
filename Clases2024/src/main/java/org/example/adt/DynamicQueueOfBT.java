@@ -1,5 +1,7 @@
 package org.example.adt;
 
+import org.example.adt.nodes.NodeOfBT;
+
 public class DynamicQueueOfBT implements QueueOfBT {
 
     private NodeOfBT first;

@@ -32,10 +32,10 @@ public class StaticMultipleDictionary implements MultipleDictionary {
         for(int i = 0; i < this.count; i++) {
             if(this.values[i][0] == key) {
                 int column = this.values[i][1];
-                if(column == MAX) {
+                if(column + 2 == MAX) {
                     throw new RuntimeException("No hay espacio disponible para un valor nuevo");
                 }
-                this.values[i][column] = value;
+                this.values[i][column + 2] = value;
                 this.values[i][1]++;
                 return;
             }

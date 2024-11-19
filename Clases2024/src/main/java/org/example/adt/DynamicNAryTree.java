@@ -1,5 +1,8 @@
 package org.example.adt;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class DynamicNAryTree implements NAryTree {
 
     private final int root;
